@@ -17,7 +17,7 @@ O projeto possui 10 pacotes, um para cada questão do desafio. É necessário im
 
 #### 2) Por que o código lança uma exception StackOverflowError? 
    A pilha de execução, que aloca os dados quando rodamos o código, teve a sua capacidade estourada. 
-   Isso ocorreu quando o código entrou em um loop infinito após chamar a classe NumericInput. O método "add" foi escrito de   
+   Isso ocorre quando o código entra em um loop infinito após chamar a classe NumericInput. O método "add" foi escrito de   
    forma recursiva, o que pode ser visto na linha '19. add(c);'. 
    Poderia remover esta recursão realizando a chamada do UserInput, através do comando "super.add(c);".
   
