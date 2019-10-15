@@ -53,8 +53,8 @@ O projeto possui 10 pacotes, um para cada questão do desafio. É necessário im
    "System.out.println("Man me");".
    Logo após, o construtor da classe Father é executado, rodando o comando "System.out.println(type + " eu");".
 #### - O que aconteceria se a classe Son tivesse apenas um construtor privado?
-   Com o construtor privado, continuamos acessando as classes "pai", que a extende.
-   O que pode acontecer é que esta classe não pode ser instanciada de fora.
+   Com o construtor privado, continuamos acessando as classes extendidas (Father e Man).
+   Porém, esta classe não pode ser instanciada de fora dela.
    
 #### 6)Escreva um método público que retorne uma String e receba uma String como parâmetro.
 #### - O método criado deve chamar isOld da classe Man 
