@@ -4,7 +4,11 @@
 O projeto possui 10 pacotes, um para cada questão do desafio. Para executar, basta entrar no pacote da questão na IDE e executá-lo.
 
 #### 1) Explique com suas palavras o que acontece quando o código acima é executado.
-  
+   O método main já é executado como uma thread dedicada.
+   Neste código, criamos mais uma thread do metodo Test, que após o start(), executará o método run().
+   A thread principal e a criada serão executados em paralelo, ou seja, cada thread tem a sua propria pilha de métodos.
+   No método run não é permitido o throw, uma vez que teria que alterar a assinatura da sua interface. O correto seria utilizar um try/catch.
+
 #### 2) Por que o código lança uma exception StackOverflowError? 
    A pilha de execução, que aloca os dados quando rodamos o código, teve a sua capacidade estourada. 
    Isso ocorreu pois o código entrou em um loop infinito após chamar a classe NumericInput, o método add chama ele mesmo
